@@ -8,23 +8,22 @@ package edu.kings;
  */
 public class Player 
 {
-	String room = "";
-	String currentRoom = "";
+	private Room room;
 	
 	//constructor and takes what room
-	public Player(String room)
+	public Player(Room newRoom)
 	{
-		room = "bedroom";
+		room = newRoom;
 	}
 	
-	public String getRoom()
+	public Room getRoom()
 	{
 		return room;
 	}
 	
-	public void setRoom()
+	public void setRoom(Room newRoom)
 	{
-		room = currentRoom;
+		room = newRoom;
 	}
 
 }
